@@ -10,7 +10,7 @@ read_file_tool_schema = {
     "type": "function",
     "function": {
         "name": "check_content",
-        "description": "Use this when the user wants to check the spelling of a names and correctness of dates in a file.",
+        "description": "Use this when the user wants to read the entire contents of a .txt file. Read both the original document and the correctcontents.txt so the orginal document can be corrected in a new file using the information in the reference file.",
         "parameters": {
             "type": "object",
             "properties": {
@@ -40,7 +40,7 @@ write_file_tool_schema = {
     "type": "function",
     "function": {
         "name": "fix_content",
-        "description": "Use this when the user wants a complete revised version of the original document to create a new file with corrections of names and dates.",
+        "description": "Use this when the user wants to create a new file containing the entire original document with all of the spelling and date corrections incorporated.",
         "parameters": {
             "type": "object",
             "properties": {
@@ -54,7 +54,7 @@ write_file_tool_schema = {
 
 def agent(messages):
     tools = [
-        read_file_tool_schema, write_file_tool_schema, list_files_schema
+        read_file_tool_schema, list_files_schema, write_file_tool_schema
     ]
 
     payload = {
@@ -77,7 +77,7 @@ def agent(messages):
 tool_called = True
 messages = [
     {"role": "user", 
-     "content": "using will4.txt and correctcontents.txt correct the spelling and the dates throughout will4.txt in a new file with a name that has not been used before."}
+     "content": "Use the entire will5.txt and correct all the mispelled names and incorrect dates using correctcontents.txt. Compare the names and dates in the orginal document agaisnt the reference file. Then reproduce the entire will5.txt with the corrections in one new file with a name that has not been used before. Do not shorten the original document."}
 ]
 while tool_called:
     message = agent(messages)
@@ -86,11 +86,14 @@ while tool_called:
 
     if tool_called:
         print("tool called!")
-        tool_calls = message["tool_calls"]
-        tool_call = tool_calls[0]
 
-        function_name = tool_call["function"]["name"]
-        function_arguments = tool_call["function"]["arguments"]
+        messages.append(message)
+
+        tool_calls = message["tool_calls"]
+        
+        for tool_call in tool_calls:
+            function_name = tool_call["function"]["name"]
+            function_arguments = tool_call["function"]["arguments"]
 
         if function_name == "check_content":
             path = function_arguments["path"]
@@ -119,6 +122,7 @@ while tool_called:
             "content": f"The output of tool {function_name} is: {output}"
         }
         messages.append(tool_message)
+    
     else:
         ai_message = {
             "role":  message["role"],

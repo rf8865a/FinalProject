@@ -1,15 +1,28 @@
-Will1: Johnathan Miller, Robert Miller, Emily Miller, Michael Miller. Date: November 15, 2026. 
+will1: Johnathan Miller, Robert Miller, Emily Miller, Michael Miller. Date: November 15, 2026. 
 
-Will2: Neil Carter, Michael Carter, Elizabeth Carter, James Carter, Sara Mitchell. date: August 21, 2026. 
 
-Will3: Daniel Robert Witaker, Michael Daniel Whitaker, Chalotte Elizabeth Whitaker, Margaret Anne Whitaker  Date: July 3, 2055
+will2: Neil Carter, Michael Carter, Elizabeth Carter, James Carter, Sara Mitchell. date: August 21, 2026. 
+
+
+will3: Daniel Robert Witaker, Michael Daniel Whitaker, Chalotte Elizabeth Whitaker, Margaret Anne Whitaker  Date: July 3, 2055
+
 
 will4: Daniel Smith, Sarah Smith, Michael Smith, Emily Smith, Brian Smith, Rebecca Smith. Date: November 21, 2026
 
-trust1:
 
-trust2:
+will5: Catherine Elizabeth Morrison, Jonathan Michael Anderson, Madison Claire Thompson, Alyson Marie Thompson, Christopher James Harrington, Rebecca Ann Collins, Elisabeth Marie Patterson, Daniel Mathew Reynolds, Sara Elizabeth Mitchell. Date: December 24, 2023
+
+
+will6: Katherine Marie Reynolds, Phillip Andrew Richardson, Emilly Grace Richardson, Britteny Nicole Richardson, Stephen William Richardson, Megan Elizabeth Saunders, Jessica Anne Williams, Nicole Annette Cooper, Timothee James Parker. Date: January 1, 2027
+
+
+trust1: Daniel Robert Whitaker, Margaret Elaine Collins, Alexander James Whitaker, Charlotte Elizabeth Whitaker, Robert Michael Bennett, Patricia Anne Sullivan. Date: August 21, 2026
+
+
+trust2: Daniel Robert Whitaker, Margaret Anne Whitaker, Michael Daniel Whitaker, Charlotte Elizabeth Whitaker. Date: November December 8, 2011. 
+
 
 trust3: Jeffrey Whitcombe, Kathrine McLaughlin, Steven Pritchard, Elizabeth Carrington, Nicolas Fitzpatrick, Madeline Harrington, and Christopher Beauregard. Date: June 29, 2023
 
-trust4: 
+
+trust4: Steven Bennett, Michelle Reynolds, Ben Bennett, Sally Bennett, Sara Reynolds, Phillip Bennett, Dennis McDonald, Date: August 06, 2015

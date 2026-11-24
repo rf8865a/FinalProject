@@ -2,7 +2,7 @@
 
 **LAST WILL AND TESTAMENT**
 
-I, Neal Carter, a resident of Washington, District of Columbia, being of sound mind and disposing memory, do hereby declare this document to be my Last Will and Testament, revoking all prior wills and codicils previously made by me.
+I, Neil Carter, a resident of Washington, District of Columbia, being of sound mind and disposing memory, do hereby declare this document to be my Last Will and Testament, revoking all prior wills and codicils previously made by me.
 
 ## ARTICLE I – IDENTIFICATION AND DECLARATION
 
@@ -14,7 +14,7 @@ This Last Will and Testament is executed on August 21, 2026.
 
 ## ARTICLE II – APPOINTMENT OF PERSONAL REPRESENTATIVE
 
-I appoint my brother, James Carter, as Personal Representative of my estate. If James Carter is unable or unwilling to serve, I appoint my sister, Sarah Mitchell, as successor Personal Representative.
+I appoint my brother, James Carter, as Personal Representative of my estate. If James Carter is unable or unwilling to serve, I appoint my sister, Sara Mitchell, as successor Personal Representative.
 
 My Personal Representative shall have all powers permitted under applicable District of Columbia law, including the authority to collect assets, pay debts, administer property, and distribute my estate.
 
@@ -40,7 +40,7 @@ If either child predeceases me, that child's share shall pass to his or her surv
 
 ## ARTICLE VI – GUARDIANSHIP
 
-If either of my children is a minor at the time of my death, I nominate my sister, Sarah Mitchell, to serve as guardian of the minor child's person and property, subject to court approval.
+If either of my children is a minor at the time of my death, I nominate my sister, Sara Mitchell, to serve as guardian of the minor child's person and property, subject to court approval.
 
 ## ARTICLE VII – GENERAL PROVISIONS
 
@@ -50,7 +50,7 @@ I direct that this Will be interpreted and administered in accordance with the l
 
 ## ARTICLE VIII – EXECUTION
 
-IN WITNESS WHEREOF, I, Neil Carter, have signed this Last Will and Testament on August 12, 2026, declaring it to be my Last Will and Testament.
+IN WITNESS WHEREOF, I, Neil Carter, have signed this Last Will and Testament on August 21, 2026, declaring it to be my Last Will and Testament.
 
 **TESTATOR:**
 
@@ -78,5 +78,4 @@ Name: ______________________________
 
 Signature: ___________________________
 
-Date: August 12, 2026
-
+Date: August 21, 2026
