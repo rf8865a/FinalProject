@@ -77,7 +77,7 @@ def agent(messages):
 tool_called = True
 messages = [
     {"role": "user", 
-     "content": "Use the entire will5.txt and correct all the mispelled names and incorrect dates using correctcontents.txt. Compare the names and dates in the orginal document agaisnt the reference file. Then reproduce the entire will5.txt with the corrections in one new file with a name that has not been used before. Do not shorten the original document."}
+     "content": "Use the entire will4.txt and correct all the mispelled names and incorrect dates using correctcontents.txt. Compare the names and dates in the orginal document agaisnt the reference file. Then reproduce the entire will4.txt with the corrections in one new file with a name that has not been used before. Do not shorten the original document."}
 ]
 while tool_called:
     message = agent(messages)
@@ -95,33 +95,33 @@ while tool_called:
             function_name = tool_call["function"]["name"]
             function_arguments = tool_call["function"]["arguments"]
 
-        if function_name == "check_content":
-            path = function_arguments["path"]
-            with open(path, "r") as file:
-                file_content = file.read()
-            output = file_content
-
-        if function_name == "list_files":
-            path = "."
-            if "path" in function_arguments:
+            if function_name == "check_content":
                 path = function_arguments["path"]
-            print(f"arguments for list_files: {path}")
-            files = glob.glob(f"{path}/*")
-            output = files
+                with open(path, "r") as file:
+                    file_content = file.read()
+                output = file_content
 
-        if function_name == "fix_content":
-            content = function_arguments["content"]
-            path = function_arguments ["path"]
-            with open(path, "w") as file:
-                file.write(content)
-            output = f"corrected document created: {path}"
-            print(output)
+            if function_name == "list_files":
+                path = "."
+                if "path" in function_arguments:
+                    path = function_arguments["path"]
+                print(f"arguments for list_files: {path}")
+                files = glob.glob(f"{path}/*")
+                output = files
 
-        tool_message = {
-            "role": "tool",
-            "content": f"The output of tool {function_name} is: {output}"
-        }
-        messages.append(tool_message)
+            if function_name == "fix_content":
+                content = function_arguments["content"]
+                path = function_arguments ["path"]
+                with open(path, "w") as file:
+                    file.write(content)
+                output = f"corrected document created: {path}"
+                print(output)
+
+            tool_message = {
+                "role": "tool",
+                "content": f"The output of tool {function_name} is: {output}"
+            }
+            messages.append(tool_message)
     
     else:
         ai_message = {
