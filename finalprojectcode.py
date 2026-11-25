@@ -77,7 +77,7 @@ def agent(messages):
 tool_called = True
 messages = [
     {"role": "user", 
-     "content": "Use the entire will3.txt and correct all the mispelled names and incorrect dates using correctcontents.txt. Compare the names and dates in the orginal document agaisnt the reference file. Then reproduce the entire will3.txt with the corrections in one new file with a name that has not been used before. Do not shorten the original document."}
+     "content": "Use the entire will1.txt and correct all the mispelled names and incorrect dates using correctcontents.txt. Compare the names and dates in the orginal document agaisnt the reference file. Then reproduce the entire will1.txt with the corrections in one new file with a name that has not been used before. Do not shorten the original document."}
 ]
 while tool_called:
     message = agent(messages)
